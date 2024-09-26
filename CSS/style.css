@@ -10,6 +10,8 @@ body {
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 52px black;
+    border-radius: 16px;
 }
 
 h1 {
