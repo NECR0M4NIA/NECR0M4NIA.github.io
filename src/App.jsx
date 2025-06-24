@@ -11,7 +11,7 @@ import Hr from "./Components/Hr";
 
 function bodyStyle() {
   document.body.style.background =
-    "linear-gradient(180deg, rgb(26, 0, 54), rgb(68, 24, 150))";
+    "linear-gradient(180deg, rgb(105, 0, 171), rgb(32, 0, 64), rgb(97, 0, 194))";
   document.body.style.fontFamily = "Space Grotesk";
 }
 

@@ -60,9 +60,9 @@ const PROJECTS = [
 
 function Component() {
   return (
-    <div className="md:grid-cols-2 md:auto-rows-fr md:mx-12">
+    <div className="md:grid-cols-2 md:auto-rows-fr md:mx-12 2xl:mx-24">
       <div className="flex justify-between items-center p-5">
-        <h1 className="text-4xl text-white font-bold">Projects</h1>
+        <h2 className="text-4xl text-white font-bold 2xl:text-4xl">Projects</h2>
         <a
           className="text-white decoration-3 underline decoration-emerald-500 text-2xl hover:text-zinc-500 transition-all duration-300 ease-out hover:decoration-emerald-900"
           href="#"
@@ -70,17 +70,18 @@ function Component() {
           CONTACT ME
         </a>
       </div>
-
-      {PROJECTS.map((project) => (
-        <Project
-          picture={project.picture}
-          name={project.name}
-          primaryLangage={project.primaryLangage}
-          secondaryLangage={project.secondaryLangage}
-          tertiaryLangage={project.tertiaryLangage}
-          technologies={project.technologies}
-        />
-      ))}
+      <div className="2xl:flex 2xl:flex-wrap 2xl:justify-between">
+        {PROJECTS.map((project) => (
+          <Project
+            picture={project.picture}
+            name={project.name}
+            primaryLangage={project.primaryLangage}
+            secondaryLangage={project.secondaryLangage}
+            tertiaryLangage={project.tertiaryLangage}
+            technologies={project.technologies}
+          />
+        ))}
+      </div>
     </div>
   );
 }

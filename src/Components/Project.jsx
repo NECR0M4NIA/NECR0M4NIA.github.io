@@ -7,10 +7,10 @@ function Component({
   technologies,
 }) {
   return (
-    <div className="p-5 my-12">
+    <div className="p-5 my-12 2xl:w-1/3">
       <a href="#">
         <img
-          className="ml-auto mr-auto rounded-xl shadow-black-5 shadow-2xl object-cover w-full h-64 md:h-96 hover:scale-102 transition-all duration-300 ease-out"
+          className="ml-auto mr-auto rounded-xl shadow-black-5 shadow-2xl object-cover w-full h-64 md:h-96 hover:scale-102 transition-all duration-300 ease-out 2xl:object-cover 2xl:w-xl 2xl:mr-auto 2xl:ml-0"
           src={picture}
           alt=""
         />
