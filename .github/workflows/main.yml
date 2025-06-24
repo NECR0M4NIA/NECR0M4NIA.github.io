@@ -18,7 +18,7 @@ jobs:
         run: npm install
       - name: Building the app
         run: npm run build
-        uses: JamesIves/github-pages-deploy-action@v4.4.3
+        uses: actions/deploy-pages@v4
         with:
           branch: gh-pages
           folder: "dist"
