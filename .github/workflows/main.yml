@@ -16,3 +16,8 @@ jobs:
         run: ls -al
       - name: Installing dependencies
         run: npm install
+      - name: Building the app
+        run: npm run build
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: "../dist"
