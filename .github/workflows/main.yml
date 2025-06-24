@@ -18,6 +18,7 @@ jobs:
         run: npm install
       - name: Building the app
         run: npm run build
-        uses: actions/upload-pages-artifact@v2
+        uses: JamesIves/github-pages-deploy-action@v4.4.3
         with:
-          path: "NECR0M4NIA.github.io\dist"
+          branch: gh-pages
+          folder: "dist"
